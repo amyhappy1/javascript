@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*여기는 css 영역*/
+        h1{
+            color: red;
+        }
+    </style>
+    <script>
+    
+
+    </script>
+    <!--
+        프로그래밍을 한다는 것
+        어떤 데이터를 다루는 것이다.
+        [버스 도착 app]
+        버스 번호, 도착시간, 정류장 고유번호..
+        [게임 app]
+        유닛의 위치, 남은 에너지, 얻은 점수 등
+        [오픈 마켓 app]
+        상품의 이름, 가격, 남은 갯수, 유효기간 등
+        데이터의 타입 정리 먼저 해야함.
+        
+        변수를 만들 때는 미리 약속된 예약어 let
+        let 다음에는 변수의 이름
+        =의 우축에 있는 값이 =의 좌측에 들어간다
+        한줄의 끝에는 ;을 작성한다.
+        연산을 한 그 위치는 결과 값으로 대체된다.
+    -->
+</head>
+<body>
+    <h1>안녕</h1>
+    <script>
+    //number type 
+        let num1=10;
+        let num2=20;
+
+        //string type
+        let str1='abcd1234';
+        let str2="김구라";
+        let str3=`하나`;  //back tick 을 이용해서 문자 데이터를 만들수도 있다.
+
+        //back tick 을 이용하면 여러줄의 문자열을 편리하게 작성할수 있다. 
+        let str4=`
+            하나
+            두울
+            세엣...
+        `;
+        let num=1;
+        let name="김구라";
+        let isMan=true;
+        let mem1={num:1, name: "김구라", isMan:true}; //object type
+        //하나의 변수명으로 여러개의 값을 한번에 관리할 수는 없을까?
+        let mem2={num:1, name:"김구라", isMan:true};
+        //object의 특정방에 넣을 데이터를 변수명으로 불러와서 넣을 수도 있다.
+        let mem3={num:num, name:name, isMan:isMan};
+        //위를 줄여서 아래와 같이 object를 만들 수도 있다.
+        let mem4={num,name,isMan}
+        //object에 저장된 값을 수정해 보기
+        mem2.num=2;
+        mem2.name="해골";
+        mem2.isMan=false;
+        //빈 object를 만들고 나중에 필요데 따라 방을 추가할 수 있다.
+        let mem5={};
+        mem5.num=3;
+        mem5.name="원숭이";
+        mem5.isMan=true;
+    
+
+
+        //연산을 할때 값이 들어 있는 변수명으로 연산을 할수도 있다. let은 변수를 처음 만들 때
+        let result=num1+num2;
+        let result2=num1+100;
+        let result3=num2*10;
+
+    </script>
+</body>
+</html>
